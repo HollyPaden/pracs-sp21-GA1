@@ -8,6 +8,14 @@ Contents of repo are this file and a file of basic git commands
 
 Used to create 100 text files in Data directory
 
-`for oldname in *.txt; do newname=$(basename $oldname txt)csv; echo "Old name: $oldname"; echo -e "New name: $newname \n"; git mv "$oldname" "$newname"; done`
+`
+for oldname in *.txt
+    do
+    newname=$(basename $oldname txt)csv
+    echo "Old name: $oldname"
+    echo -e "New name: $newname \n"
+    git mv "$oldname" "$newname"
+done
+`
 
 Used to rename files from .txt to .csv
